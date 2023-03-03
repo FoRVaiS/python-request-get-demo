@@ -1,0 +1,10 @@
+services:
+  python-request-get-dev-container:
+    build:
+      context: .
+      target: dev
+    image: python-request-get-dev-container:dev-container
+    container_name: python-request-get-dev-container
+    volumes:
+      - .:/app
+    tty: true
